@@ -9,7 +9,7 @@
     <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Omron FINS</name>
+    <name>Omron Fins Parent</name>
     <description>High-performance, non-blocking, zero-buffer-copying Omron FINS for Java</description>
 
     <properties>
@@ -28,10 +28,6 @@
         <module>omron-fins-master</module>
         <module>omron-fins-slave</module>
         <module>omron-fins-netty-udp</module>
-
-        <!-- <module>omron-fins-netty-udp-slave</module> -->
-        <!-- <module>omron-fins-netty-tcp-master</module> -->
-        <!-- <module>omron-fins-netty-tcp-slave</module> -->
     </modules>
 
     <dependencyManagement>
@@ -62,22 +58,26 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec</artifactId>
                 <version>${io.netty.version}</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-handler</artifactId>
                 <version>${io.netty.version}</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-buffer</artifactId>
                 <version>${io.netty.version}</version>
+                <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.jooq</groupId>
                 <artifactId>joou</artifactId>
                 <version>0.9.3</version>
+                <scope>compile</scope>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
@@ -85,12 +85,14 @@
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
                 <version>${javax.xml.bind.version}</version>
+                <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>net.jodah</groupId>
                 <artifactId>failsafe</artifactId>
                 <version>1.1.0</version>
+                <scope>compile</scope>
             </dependency>
 
             <dependency>
