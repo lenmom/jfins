@@ -8,11 +8,11 @@
 		<groupId>com.siyka</groupId>
 		<artifactId>omron-fins-parent</artifactId>
 		<version>0.0.2-SNAPSHOT</version>
-		<relativePath>../omron-fins-parent/pom.xml</relativePath>
 	</parent>
-
-	<name>Omron FINS Core</name>
+	<groupId>com.siyka</groupId>
 	<artifactId>omron-fins-core</artifactId>
+	<packaging>jar</packaging>
+	<name>Omron FINS Core</name>
 
 	<dependencies>
 		<dependency>
@@ -24,7 +24,6 @@
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
-			<version>2.2.2</version>
 		</dependency>
 
 		<dependency>

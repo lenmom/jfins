@@ -8,11 +8,11 @@
 		<groupId>com.siyka</groupId>
 		<artifactId>omron-fins-parent</artifactId>
 		<version>0.0.2-SNAPSHOT</version>
-		<relativePath>../omron-fins-parent/pom.xml</relativePath>
 	</parent>
+	<artifactId>omron-fins-slave</artifactId>
+	<packaging>jar</packaging>
 
 	<name>Omron FINS Slave</name>
-	<artifactId>omron-fins-slave</artifactId>
 
 	<dependencies>
 		<dependency>
